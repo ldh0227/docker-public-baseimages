@@ -3,16 +3,7 @@ set -eu
 
 IMAGES="
 base-ubuntu-20.04
-base-go
-base-jre-8
-base-jdk-8
-base-jre-11
-base-jdk-11
-base-jre-17
-base-jdk-17
-base-nodejs-8
 base-nodejs-10
-base-nodejs-14
 "
 
 DOCKER_TAG="${DOCKER_TAG:-master}"

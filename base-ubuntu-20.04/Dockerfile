@@ -22,8 +22,8 @@ FROM ubuntu:focal-20220302
 
 ENV DEBIAN_FRONTEND=noninteractive LANG=en_US.UTF-8 TERM=xterm
 
-RUN echo 'deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse' > /etc/apt/sources.list && \
-	echo 'deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list && \
+RUN echo 'deb http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse' > /etc/apt/sources.list && \
+	echo 'deb http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse' >> /etc/apt/sources.list && \
 	echo 'path-exclude=/usr/share/man/*' > /etc/dpkg/dpkg.cfg.d/docker-no-doc && \
 	echo 'path-exclude=/usr/share/doc/*' >> /etc/dpkg/dpkg.cfg.d/docker-no-doc && \
 	echo 'path-exclude=/usr/share/locale/*' >> /etc/dpkg/dpkg.cfg.d/docker-no-doc && \
